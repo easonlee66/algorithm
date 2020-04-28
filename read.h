@@ -40,24 +40,12 @@ namespace std _GLIBCXX_VISIBILITY(default){
 		}
 		return (fs?(0-finally):finally);
 	}
-	#define readchar getchar//以后再升级吧—_ —
-/*	struct String{
-		string s;
-		char *c_s;
-		void init_es(){
-			this->es=(this->s).c_str();
-		}
-		void tostring(){
-			char *cmp=this->c_s;
-			int i=0;
-			while(*cmp!='\0'){
-				(this->s)[i]=*cmp;
-				i++;
-			}
-		}
-	};
-	char *to_c_string(string s){
-	}*///以上代码未开发完毕，因此注释掉
+    char readchar(){
+        char x;
+        do{
+            x=getchar();
+        }while(x==' '||x=='\n'||x=='\t');//蹇界暐涓虹┖鏍笺�佸洖杞︺�乼ab
+    }
 	_GLIBCXX_END_NAMESPACE_VERSION
 }
 

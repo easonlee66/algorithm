@@ -3,20 +3,16 @@
 #### Description
 集成常用算法
 
-#### Software Architecture
-Software architecture description
-
 #### Installation
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  download zip
+2.  add these header files into your project
+3.  `#include "xxx.h"`
 
 #### Instructions
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  ucs.h: union checking set, use `union_checking_set ucs;`to 
+2.  read.h: please read
 
 #### Contribution
 
