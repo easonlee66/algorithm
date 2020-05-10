@@ -46,7 +46,26 @@ namespace std _GLIBCXX_VISIBILITY(default){
             x=getchar();
         }while(x==' '||x=='\n'||x=='\t');//忽略为空格、回车、tab
     }
-	_GLIBCXX_END_NAMESPACE_VERSION
+    string getline(){
+	    string s;
+	    char b;
+	    while((b=getchar())!='\n'){
+		    s.push_back(b);
+	    }
+	    return s;
+    }
+    const char* getline_c(){
+	    string s=getline();
+	    return s.c_str();
+    }
+    void getline_cs(const char *s){
+	    char b;
+	    char *a=s;
+	    while((b=getchar())!='\n'){
+		    *a=b;
+		    a++;
+	    }
+    }
+    _GLIBCXX_END_NAMESPACE_VERSION
 }
-
 #endif
