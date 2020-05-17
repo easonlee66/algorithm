@@ -10,9 +10,9 @@
 3.  
 ```cpp
 #include "xxx.h"
-using namespace algorithm
+using namespace algorithm;
 ```
-**注意**使用前一定要`using namespace algorithm`，或者`algorithm::xxx`，否则编译会报错！！！
+**注意**使用前一定要`using namespace algorithm;`，或者`algorithm::xxx`，否则编译会报错！！！
 
 #### 使用说明
 
