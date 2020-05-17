@@ -5,12 +5,11 @@
 
 #include "myvector.h"
 
-namespace std _GLIBCXX_VISIBILITY(default){
-	_GLIBCXX_BEGIN_NAMESPACE_VERSION
+namespace algorithm(default){
 	template<typename elemtype>
 	class mydeque{
 		private:
-			myvector <elemtype> c;
+			algorithm::myvector <elemtype> c;
 		public:
 			void init(){
 				c.init();
@@ -40,7 +39,6 @@ namespace std _GLIBCXX_VISIBILITY(default){
 				return c.empty();
 			}
 	};
-	_GLIBCXX_END_NAMESPACE_VERSION
 }
 
 #endif

@@ -6,8 +6,7 @@
 #include <cstdio>
 #include <string>
 
-namespace std _GLIBCXX_VISIBILITY(default){
-	_GLIBCXX_BEGIN_NAMESPACE_VERSION
+namespace algorithm(default){
 	void pushint(int &index,int pushindex){
 		index*=10;
 		index+=pushindex;
@@ -66,6 +65,5 @@ namespace std _GLIBCXX_VISIBILITY(default){
 		    a++;
 	    }
     }
-    _GLIBCXX_END_NAMESPACE_VERSION
 }
 #endif

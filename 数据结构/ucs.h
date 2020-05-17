@@ -3,17 +3,13 @@
 
 #progma GCC system_header
 
-#include <vector>
+#include "myvector.h"
 
-namespace std _GLIBCXX_VISIBILITY(default){
-	_GLIBCXX_BEGIN_NAMESPACE_VERSION
+namespace algorithm(default){
     template <typename x>
-    struct ucs_base{
-        vector <x> father;
-    };
 	class union_checking_set{
 		private:
-			vector <int> father;
+			algorithm::myvector <int> father;
 		public:
 			int find(int x){
 				while(father[x]!=x){
@@ -33,7 +29,6 @@ namespace std _GLIBCXX_VISIBILITY(default){
 			}
 	};
     struct weith_base{
-<<<<<<< HEAD
         int to;
 		int weight;
 		weith_base(int to,int weight):to(to),weight(weight){}
@@ -41,7 +36,7 @@ namespace std _GLIBCXX_VISIBILITY(default){
 	template<typename weighttype,int max_num,typename weight_enum>
 	class has_weight_ucs{
 		private:
-            vector <weith_base> father;
+            algorithm::myvector <weith_base> father;
 		public:
 			void init(int n){
 				for(int i=1;i<=n;i++){
@@ -73,18 +68,7 @@ namespace std _GLIBCXX_VISIBILITY(default){
 				father[x].to=y;
 				father[x].weight=i;
 			}
-=======
-        int to,weight;
-    };
-	template<typename weighttype>
-	class has_weight_ucs{
-		private:
-			union_checking_set c;
-            weight_base father;
-		public:
->>>>>>> 49ce5e3f4187a7ac67daf092794ce55617b3220a
 	};
-	_GLIBCXX_END_NAMESPACE_VERSION
 }
 
 #endif

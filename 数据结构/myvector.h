@@ -8,8 +8,7 @@
 #define first 10
 #define add 10
 
-namespace std _GLIBCXX_VISIBILITY(default){
-	_GLIBCXX_BEGIN_NAMESPACE_VERSION
+namespace algorithm(default){
 	template <typename elemtype>
 	class myvector{
 		public:
@@ -96,7 +95,6 @@ namespace std _GLIBCXX_VISIBILITY(default){
 				return this->x[i];
 			}
 	};
-	_GLIBCXX_END_NAMESPACE_VERSION
 }
 
 #endif

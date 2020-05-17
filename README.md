@@ -7,7 +7,12 @@
 
 1.  下载.zip
 2.  将头文件复制到你的项目里
-3.  `#include "xxx.h"`
+3.  
+```cpp
+#include "xxx.h"
+using namespace algorithm
+```
+**注意**使用前一定要`using namespace algorithm`，或者`algorithm::xxx`，否则编译会报错！！！
 
 #### 使用说明
 

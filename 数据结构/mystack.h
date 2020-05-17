@@ -1,37 +1,32 @@
-#ifndef _MYQUEUE_
-#define _MYQUEUE_ 1
+#ifndef _MYSTACK_
+#define _MYSTACK_ 1
 
 #progma GCC system_header
 
 #include "mydeque.h"
 
-namespace std _GILBCXX_VISIBILITY(default){
-	_GLIBCXX_BIGIN_NAMESPACE_VERSION
+namespace algorithm(default){
 	template<typename elemtype>
-	class myqueue{
+	class mystack{
 		private:
-			mydeque <elemtype> c;
+			algorithm::mydeque <elemtype> c;
 		public:
 			void push(elemtype __x){
 				c.push_back(__x);
 			}
 			void pop(){
-				c.pop_front();
+				c.pop_back();
 			}
 			bool empty(){
 				return c.empty();
 			}
-			elemtype front(){
-				return c.front();
-			}
-			elemtype back(){
+			elemtype top(){
 				return c.back();
 			}
 			void clear(){
 				c.clear();
 			}
 	};
-	_GLIBCXX_END_NAMESPACE_VERSION
 }
 
 #endif
