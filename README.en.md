@@ -11,12 +11,12 @@ some algorithms
 
 #### Instructions
 
-1.  ucs.h: union checking set, use `union_checking_set ucs;`to make a new union checking set.
+1.  ucs.h: union find, use `union_checking_set ucs;`to make a new union find.
 2.  read.h: please read [this](https://www.luogu.com.cn/blog/eason66-blog/shou-xie-kuai-du-c).
+3.  myvector.h: vector,use `myvector<int/char/...> x`to make a new vector.
 
 #### Contribution
 
-1.  Fork the repository
 2.  Create xxx branch
 3.  Commit your code
 4.  Create Pull Request
