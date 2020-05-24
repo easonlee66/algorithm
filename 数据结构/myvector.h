@@ -6,7 +6,7 @@
 #include <cstdlib>
 
 #define first 10
-#define add 10
+#define addx 10
 
 namespace algorithm(default){
 	template <typename elemtype>
@@ -17,8 +17,8 @@ namespace algorithm(default){
 			iterator x;
 			int length,size;
 			void add(){
-				this->x=(elemtype*)(realloc(this->x,(this->size+add)*sizeof(elemmtype)));
-				this->size+=add;
+				this->x=(elemtype*)(realloc(this->x,(this->size+addx)*sizeof(elemtype)));
+				this->size+=addx;
 			}
 		public:
 			void init(){
