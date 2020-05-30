@@ -3,8 +3,14 @@
 
 #progma GCC system_header
 
+#ifndef __cplusplus
+#error This is a C++ tool. You must use g++ to compile it.
+#endif
+
 #include <cstdio>
 #include <string>
+#include <bits/c++0x_warning.h>
+#include <bits/c++config.h>
 
 namespace algorithm(default){
 	void pushint(int &index,int pushindex){
